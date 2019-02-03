@@ -8,18 +8,26 @@
   <body>
     <header class="main-header">
         <div class="main-header__top">
-            <a class="logo">
-                <img src="http://placehold.it/220x47" width="220" height="47" alt="Логотип магазина Техномарт">
-            </a>
+            <div class="logo">
+                <a class="logo-link">
+                    <img src="img/logo.svg" width="111" height="18" alt="Логотип магазина Техномарт">
+                </a>
+            </div>
             <form class="search">
                 <p>
-                    <span class="search-icon"></span>
+                    <img src="img/icon-search.svg" width="17" height="17">
                     <input type="text" placeholder="Поиск:">
                 </p>
             </form>
             <nav class="user-orders">
-                <span><a href="bookmarks.html">Закладки: 0</a></span>
-                <span><a href="basket.html">Корзина: 0</a></span>
+                <a href="bookmarks.html">
+                    <img src="img/icon-bookmark.svg" width="14" height="16" alt="Иконка закладок">
+                    <span>Закладки: 0</span>
+                </a>
+                <a href="cart.html">
+                    <img src="img/cart-icon.svg" width="15" height="15" alt="Иконка корзины">
+                    <span>Корзина: 10</span>
+                </a>
                 <span><a href="order.html">Оформить заказ</a></span>
             </nav>
         </div>
@@ -28,15 +36,18 @@
         </h1>
         <section class="header__contacts">
             <button class="phone" type="button">
-                <span class="phone-icon"></span>
-                <p>+7(812)555-05-55</p>
+                <img src="img/icon-phone.svg" width="19" height="19" alt="Иконка телефона">
+                <span>+7(812)555-05-55</span>
             </button>
             <span>
                 г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
             </span>
         </section>
         <section class="authorization_type_false">
-            <a class="button" href="auth.html">Войти</a>
+            <a class="button" href="#">
+                <img src="img/icon-login.svg" width="20" height="17" alt="Иконка входа">
+                <span>Войти</span>
+            </a>
             <a class="button" href="registration.html">Регистрация</a>
         </section>
         <nav>
@@ -113,7 +124,7 @@
                     Вы можете забрать товар сами, заехав в наш офис:
                 </p>
                 <a href="map.html">
-                    <img src="http://placehold.it/300x158" width="300" height="258" alt="Карта">
+                    <img src="img/small-map@3x.jpg" width="300" height="158" alt="Карта">
                 </a>
                 <a class="button" href="mailto:mail@htmlacademy.ru">Заблудились? НапиШИТЕ НАМ!</a>
             </section>
@@ -121,9 +132,11 @@
     </main>
     <footer class="main-footer">
         <div class="footer__contacts">
-            <a class="logo">
-                <img src="http://placehold.it/220x47" width="220" height="47" alt="Логотип магазина Техномарт">
-            </a>
+            <div class="logo">
+                <a class="logo-link">
+                    <img src="img/logo.svg" width="111" height="18" alt="Логотип магазина Техномарт">
+                </a>
+            </div>
             <span class="footer-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</span>
             <span class="footer-phone">+7(812)555-05-55</span>
         </div>
@@ -154,20 +167,17 @@
             <ul class="footer__social-links">
                 <li class="vk">
                     <a href="https://vk.com/htmlacademy">
-                        <span class="vk-icon"></span>
-                        <span>Наша группа в ВК</span>
+                        <img src="img/vk-icon.svg" width="26" height="15" alt="Вконтакте">
                     </a>
                 </li>
                 <li class="fb">
                     <a href="https://www.facebook.com/htmlacademy">
-                        <span class="fb-icon"></span>
-                        <span>Наша группа в Facebook</span>
+                        <img src="img/fb-icon.svg" width="12" height="22" alt="Facebook">
                     </a>
                 </li>
                 <li class="insta">
                     <a href="https://www.instagram.com/htmlacademy/">
-                        <span class="insta-icon"></span>
-                        <span>Мы в инстаграмме</span>
+                        <img src="img/insta-icon.svg" width="21" height="21" alt="Инстаграмм">
                     </a>
                 </li>
             </ul>
@@ -185,7 +195,7 @@
         <h2 class="visually-hidden">Как до нас добраться</h2>
             <p>Модалка с картой<br>In progress...
             </p>
-        <span class="modal-close">x</span>
+        <img src="img/form-2.svg" width="21" height="21" alt="Закрывающий крестик">
     </section>
   </body>
 </html>
