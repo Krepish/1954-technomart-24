@@ -8,25 +8,33 @@
   <body>
     <header class="main-header">
         <div class="main-header__top">
-            <a class="logo" href="index.html">
-                <img src="http://placehold.it/220x47" width="220" height="47" alt="Логотип магазина Техномарт">
-            </a>
+            <div class="logo">
+                <a class="logo-link" href="index.html">
+                    <img src="img/logo.svg" width="111" height="18" alt="Логотип магазина Техномарт">
+                </a>
+            </div>
             <form class="search">
                 <p>
-                    <span class="search-icon"></span>
+                    <img src="img/icon-search.svg" width="17" height="17" alt="Иконка поиска">
                     <input type="text" placeholder="Поиск:">
                 </p>
             </form>
             <nav class="user-orders">
-                <span><a href="bookmarks.html">Закладки: 0</a></span>
-                <span><a href="basket.html">Корзина: 10</a></span>
+                <a href="bookmarks.html">
+                    <img src="img/icon-bookmark.svg" width="14" height="16" alt="Иконка закладок">
+                    <span>Закладки: 0</span>
+                </a>
+                <a href="cart.html">
+                    <img src="img/cart-icon.svg" width="15" height="15" alt="Иконка корзины">
+                    <span>Корзина: 10</span>
+                </a>
                 <span><a href="order.html">Оформить заказ</a></span>
             </nav>
         </div>
         <section class="header__contacts">
             <button class="phone" type="button">
-                <span class="phone-icon"></span>
-                <p>+7(812)555-05-55</p>
+                <img src="img/icon-phone.svg" width="19" height="19" alt="Иконка телефона">
+                <span>+7(812)555-05-55</span>
             </button>
             <span>
                 г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
@@ -35,11 +43,11 @@
         <div class="authorization_type_true">
             <p>
                 <a href="personal.html">
-                    <span class="user-icon"></span>
+                    <img src="img/icon-user.svg" width="20" height="18" alt="Иконка пользователя">
                     <span>Равшан Джамшутович</span>
                 </a>
                 <a href="personal-out.html">
-                    <span class="exit-icon"></span>
+                    <img src="img/icon-logout.svg" width="21" height="17" alt="Иконка выхода">
                 </a>
             </p>
             <ul>
@@ -70,7 +78,7 @@
             <ul>
                 <li class="breadcrumbs__item">
                     <a href="index.html">
-                        Главная<!--вставить иконку с домиком-->
+                        <img src="img/icon-home.svg" width="15" height="12" alt="Иконка home">
                     </a>
                 </li>
                 <li class="breadcrumbs__item">
@@ -102,23 +110,39 @@
                     <h3>ПРОИЗВОДИТЕЛИ:</h3>
                     <ul>
                         <!--кастомные чекбоксы-->
-                        <li>BOSCH</li>
-                        <li>ИНТЕРСКОЛ</li>
-                        <li>MAKIta</li>
-                        <li>Dewalt</li>
-                        <li>Hitachi</li>
+                        <li>
+                            <img src="img/checkbox-on.svg" width="27" height="23" alt="Чекбокс">
+                            <span>BOSCH</span>
+                        </li>
+                        <li>
+                            <img src="img/checkbox-off.svg" width="23" height="23" alt="Чекбокс">
+                            <span>ИНТЕРСКОЛ</span>
+                        </li>
+                        <li>
+                            <img src="img/checkbox-on.svg" width="27" height="23" alt="Чекбокс">
+                            <span>MAKIta</span>
+                        </li>
+                        <li>
+                            <img src="img/checkbox-off.svg" width="23" height="23" alt="Чекбокс">
+                            <span>Dewalt</span>
+                        </li>
+                        <li>
+                            <img src="img/checkbox-off.svg" width="23" height="23" alt="Чекбокс">
+                            <span>Hitachi</span>
+                        </li>
                     </ul>
                 </section>
                 <hr>
                 <section>
                     <h3>ПИТАНИЕ:</h3>
                     <ul>
-                        <!--кастомные радиобатонны-->
                         <li>
-                            Аккумуляторные
+                            <img src="img/radio-on.svg" width="25" height="25" alt="Radiobutton">
+                            <span>Аккумуляторные</span>
                         </li>
                         <li>
-                            Сетевые
+                            <img src="img/radio-off.svg" width="25" height="25" alt="Radiobutton">
+                            <span>Сетевые</span>
                         </li>
                     </ul>
                 </section>
@@ -129,7 +153,7 @@
                 <ul class="items-list">
                     <li class="catalog__item">
                         <section class="item">
-                            <img class="item-photo" src="http://placehold.it/218x170" width="218" height="170" alt="Перфоратор BOSCH BFG 3000">
+                            <img class="item-photo" src="img/catalog-items/product-1@3x.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 3000">
                             <h3 class="item__name">
                                 <span class="catalog__item_firm">Перфоратор BOSCH</span>
                                 <span class="catalog__item-model">BFG 3000</span>
@@ -140,7 +164,7 @@
                     </li>
                     <li class="catalog__item">
                         <section class="item">
-                            <img class="item-photo" src="http://placehold.it/218x170" width="218" height="170" alt="Перфоратор BOSCH BFG 6000">
+                            <img class="item-photo" src="img/catalog-items/product-2@3x.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 6000">
                             <h3 class="item__name">
                                 <span class="catalog__item_firm">Перфоратор BOSCH</span>
                                 <span class="catalog__item-model">BFG 6000</span>
@@ -153,11 +177,11 @@
                     <li class="catalog__item">
                         <section class="item item_type_new item_hover_yes">
                             <!--добавить шильдик new-->
-                            <span class="item-new">new</span>
+                            <img class="item-photo" src="img/new-flag@3x.png" width="60" height="59" alt="new">
                             <!--При клике на кнопку «Купить» появляется модальное окно с сообщением о добавлении в корзину -->
                             <button class="buy-button" type="button">
-                                <span class="card-icon"></span>
-                                Купить
+                                <img src="img/cart-icon.svg" width="15" height="15" alt="Иконка корзины">
+                                <span>Купить</span>
                             </button>
                             <button type="button">В закладки</button>
                             <h3 class="item__name">
@@ -170,7 +194,7 @@
                     </li>
                     <li class="catalog__item">
                         <section class="item">
-                            <img class="item-photo" src="http://placehold.it/218x170" width="218" height="170" alt="Перфоратор BOSCH BFG 3000">
+                            <img class="item-photo" src="img/catalog-items/product-1@3x.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 3000">
                             <h3 class="item__name">
                                 <span class="catalog__item_firm">Перфоратор BOSCH</span>
                                 <span class="catalog__item-model">BFG 3000</span>
@@ -180,9 +204,9 @@
                         </section>
                     </li>
                     <li class="catalog__item">
-                        <section class="item item_type_new ">
-                            <span class="item-new">new</span>
-                            <img class="item-photo" src="http://placehold.it/218x170" width="218" height="170" alt="Перфоратор BOSCH BFG 6000">
+                        <section class="item item_type_new">
+                            <img class="item-photo" src="img/new-flag@3x.png" width="60" height="59" alt="new">
+                            <img class="item-photo" src="img/catalog-items/product-2@3x.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 6000">
                             <h3 class="item__name">
                                 <span class="catalog__item_firm">Перфоратор BOSCH</span>
                                 <span class="catalog__item-model">BFG 6000</span>
@@ -193,7 +217,7 @@
                     </li>
                     <li class="catalog__item">
                         <section class="item">
-                            <img class="item-photo" src="http://placehold.it/218x170" width="218" height="170" alt="Перфоратор BOSCH BFG 2000">
+                            <img class="item-photo" src="img/catalog-items/product-1@3x.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 2000">
                             <h3 class="item__name">
                                 <span class="catalog__item_firm">Перфоратор BOSCH</span>
                                 <span class="catalog__item-model">BFG 2000</span>
@@ -204,8 +228,8 @@
                     </li>
                     <li class="catalog__item">
                         <section class="item item_type_new">
-                            <span class="item-new">new</span>
-                            <img class="item-photo" src="http://placehold.it/218x170" width="218" height="170" alt="Перфоратор BOSCH BFG 3000">
+                            <img class="item-photo" src="img/new-flag@3x.png" width="60" height="59" alt="new">
+                            <img class="item-photo" src="img/catalog-items/product-1@3x.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 3000">
                             <h3 class="item__name">
                                 <span class="catalog__item_firm">Перфоратор BOSCH</span>
                                 <span class="catalog__item-model">BFG 3000</span>
@@ -216,7 +240,7 @@
                     </li>
                     <li class="catalog__item">
                         <section class="item">
-                            <img class="item-photo" src="http://placehold.it/218x170" width="218" height="170" alt="Перфоратор BOSCH BFG 6000">
+                            <img class="item-photo" src="img/catalog-items/product-2@3x.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 6000">
                             <h3 class="item__name">
                                 <span class="catalog__item_firm">Перфоратор BOSCH</span>
                                 <span class="catalog__item-model">BFG 6000</span>
@@ -227,7 +251,7 @@
                     </li>
                     <li class="catalog__item">
                         <section class="item">
-                            <img class="item-photo" src="http://placehold.it/218x170" width="218" height="170" alt="Перфоратор BOSCH BFG 2000">
+                            <img class="item-photo" src="img/catalog-items/product-1@3x.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 2000">
                             <h3 class="item__name">
                                 <span class="catalog__item_firm">Перфоратор BOSCH</span>
                                 <span class="catalog__item-model">BFG 2000</span>
@@ -248,9 +272,11 @@
     </main>
     <footer class="main-footer">
         <div class="footer__contacts">
-            <a class="logo" href="index.html">
-                <img src="http://placehold.it/220x47" width="220" height="47" alt="Логотип магазина Техномарт">
-            </a>
+             <div class="logo">
+                <a class="logo-link" href="index.html">
+                    <img src="img/logo.svg" width="111" height="18" alt="Логотип магазина Техномарт">
+                </a>
+            </div>
             <span class="footer-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</span>
             <span class="footer-phone">+7(812)555-05-55</span>
         </div>
@@ -281,20 +307,17 @@
             <ul class="footer__social-links">
                 <li class="vk">
                     <a href="https://vk.com/htmlacademy">
-                        <span class="vk-icon"></span>
-                        <span>Наша группа в ВК</span>
+                        <img src="img/vk-icon.svg" width="26" height="15" alt="Вконтакте">
                     </a>
                 </li>
                 <li class="fb">
                     <a href="https://www.facebook.com/htmlacademy">
-                        <span class="fb-icon"></span>
-                        <span>Наша группа в Facebook</span>
+                        <img src="img/fb-icon.svg" width="12" height="22" alt="Facebook">
                     </a>
                 </li>
                 <li class="insta">
                     <a href="https://www.instagram.com/htmlacademy/">
-                        <span class="insta-icon"></span>
-                        <span>Мы в инстаграмме</span>
+                        <img src="img/insta-icon.svg" width="21" height="21" alt="Инстаграмм">
                     </a>
                 </li>
             </ul>
@@ -312,7 +335,7 @@
         <h2 class="visually-hidden">Как до нас добраться</h2>
         <p>Модалка с картой<br>In progress...
         </p>
-        <span class="modal-close">x</span>
+        <img src="img/form-2.svg" width="21" height="21" alt="Закрывающий крестик">
     </section>
   </body>
 </html>
