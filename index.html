@@ -7,50 +7,43 @@
   </head>
   <body>
     <header class="main-header">
-        <div class="main-header__top">
-            <div class="logo">
-                <a class="logo-link">
-                    <img src="img/logo.svg" width="111" height="18" alt="Логотип магазина Техномарт">
-                </a>
+        <nav class="main-nav">
+            <div class="main-header main-header__top">
+                <div class="logo">
+                    <a class="logo-link">
+                        <img src="img/logo.svg" width="111" height="18" alt="Логотип магазина Техномарт">
+                    </a>
+                </div>
+                <form class="search" method="post" action="https://echo.htmlacademy.ru">
+                    <p>
+                        <!--тут есть вопросы-->
+                        <button type="submit">
+                            <img src="img/icon-search.svg" width="17" height="17">
+                        </button>
+                        <input type="text" name="search" value="" placeholder="Поиск:">
+                    </p>
+                </form>
+                <div class="user-orders">
+                    <a href="bookmarks.html">
+                        <img src="img/icon-bookmark.svg" width="14" height="16" alt="Ваши закладки">
+                        <span>Закладки:</span>
+                        <span class="count">0</span>
+                    </a>
+                    <a href="cart.html">
+                        <img src="img/cart-icon.svg" width="15" height="15" alt="Ваша корзина">
+                        <span>Корзина:</span>
+                        <span class="count">0</span>
+                    </a>
+                    <span><a href="order.html">Оформить заказ</a></span>
+                </div>
             </div>
-            <form class="search">
-                <p>
-                    <img src="img/icon-search.svg" width="17" height="17">
-                    <input type="text" placeholder="Поиск:">
-                </p>
-            </form>
-            <nav class="user-orders">
-                <a href="bookmarks.html">
-                    <img src="img/icon-bookmark.svg" width="14" height="16" alt="Иконка закладок">
-                    <span>Закладки: 0</span>
+            <section class="authorization authorization_type_false">
+                <a class="button" href="#">
+                    <img src="img/icon-login.svg" width="20" height="17" alt="Иконка входа">
+                    <span>Войти</span>
                 </a>
-                <a href="cart.html">
-                    <img src="img/cart-icon.svg" width="15" height="15" alt="Иконка корзины">
-                    <span>Корзина: 10</span>
-                </a>
-                <span><a href="order.html">Оформить заказ</a></span>
-            </nav>
-        </div>
-        <h1 class="visually-hidden">
-            Интернет-магазин строительных материалов и инструментов для ремонта
-        </h1>
-        <section class="header__contacts">
-            <button class="phone" type="button">
-                <img src="img/icon-phone.svg" width="19" height="19" alt="Иконка телефона">
-                <span>+7(812)555-05-55</span>
-            </button>
-            <span>
-                г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
-            </span>
-        </section>
-        <section class="authorization_type_false">
-            <a class="button" href="#">
-                <img src="img/icon-login.svg" width="20" height="17" alt="Иконка входа">
-                <span>Войти</span>
-            </a>
-            <a class="button" href="registration.html">Регистрация</a>
-        </section>
-        <nav>
+                <a class="button" href="registration.html">Регистрация</a>
+            </section>
             <ul class="site-navigation">
                 <li><a href="#">Главная</a></li>
                 <li><a href="about.html">Компания</a></li>
@@ -61,32 +54,144 @@
                 <li><a href="contacts.html">Контакты</a></li>
             </ul>
         </nav>
+        <section class="header header__contacts">
+            <!--Нужна ли тут кнопка?-->
+            <button class="phone" type="button">
+                <img src="img/icon-phone.svg" width="19" height="19" alt="Телефон для связи +7(812)555-05-55">
+                <span>+7(812)555-05-55</span>
+            </button>
+            <span>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</span>
+        </section>
     </header>
     <main class="container">
+        <h1 class="visually-hidden">
+            Интернет-магазин строительных материалов и инструментов для ремонта
+        </h1>
         <section class="all-services">
+            <!--переименовать, это не услуги
+                нужно разибить на три части
+                верхние три блока, галерея, правые два блока
+            -->
             <h2 class="visually-hidden">Все услуги</h2>
             <div>
                 <!-- Будет размечен позже-->
                 Блок с услугами<br>
                 In progress...
             </div>
+            <ul>
+                <li>Материалы</li>
+                <li>Инструмент</li>
+                <li>Техника</li>
+                <li>Скидки 50%</li>
+                <li>Доставка</li>
+            </ul>
+            <section class="gallery">
+                <figure class="gallery-content">
+                    <a href="#">
+                        <img src="img/gallery/drill.jpg" width="620" height="266" alt="Мужчина с дрелью">
+                    </a>
+                    <a class="button gallery-button gallery-button-open" href="#">Открыть каталог</a>
+                    <a href="#">
+                        <img src="img/gallery/perf.jpg" width="620" height="266" alt="Мужчина с перфоратором">
+                    </a>
+                    <a class="button gallery-button gallery-button-open" href="#">Открыть каталог</a>
+                </figure>
+                <button class="button gallery-button gallery-button-left">Стрелка влево</button>
+                <button class="button gallery-button gallery-button-right">Стрелка вправо</button>
+            </section>
         </section>
         <section class="popular-goods">
             <h2>Популярные товары:</h2>
-            <div>
-                <!-- Будет размечен позже-->
+            <a class="button" href="catalog.html">Все популярные товары</a>
+             <div>
                 Блок c популярными товарами<br>
                 In progress...
             </div>
+            <div>
+               <ul>
+                   <li class="catalog__item">
+                        <section class="item">
+                            <img class="item-photo" src="img/catalog-items/product-1@3x.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 3000">
+                            <h3 class="item__name">
+                                <span class="catalog__item_firm">Перфоратор BOSCH</span>
+                                <span class="catalog__item-model">BFG 3000</span>
+                            </h3>
+                            <b class="item__old-price item__old-price_show_true">22500 Р.</b>
+                            <b class="item__new-price">15500 Р.</b>
+                        </section>
+                    </li>
+                    <li class="catalog__item">
+                        <section class="item">
+                            <img class="item-photo" src="img/catalog-items/product-1@3x.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 3000">
+                            <h3 class="item__name">
+                                <span class="catalog__item_firm">Перфоратор BOSCH</span>
+                                <span class="catalog__item-model">BFG 3000</span>
+                            </h3>
+                            <b class="item__old-price item__old-price_show_true">22500 Р.</b>
+                            <b class="item__new-price">15500 Р.</b>
+                        </section>
+                    </li>
+                    <li class="catalog__item">
+                        <section class="item">
+                            <img class="item-photo" src="img/catalog-items/product-1@3x.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 3000">
+                            <h3 class="item__name">
+                                <span class="catalog__item_firm">Перфоратор BOSCH</span>
+                                <span class="catalog__item-model">BFG 3000</span>
+                            </h3>
+                            <b class="item__old-price item__old-price_show_true">22500 Р.</b>
+                            <b class="item__new-price">15500 Р.</b>
+                        </section>
+                    </li>
+                    <li class="catalog__item">
+                        <section class="item">
+                            <img class="item-photo" src="img/catalog-items/product-1@3x.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 3000">
+                            <h3 class="item__name">
+                                <span class="catalog__item_firm">Перфоратор BOSCH</span>
+                                <span class="catalog__item-model">BFG 3000</span>
+                            </h3>
+                            <b class="item__old-price item__old-price_show_true">22500 Р.</b>
+                            <b class="item__new-price">15500 Р.</b>
+                        </section>
+                    </li>
+               </ul>
+            </div>
         </section>
         <section class="popular-firms">
-            <h2>Популярные Производители:</h2>
+            <h2>Популярные производители:</h2>
+            <a class="button" href="catalog.html">Все производители</a>
             <div>
                 <!-- Блок «Популярные производители»: карточка производителя является ссылкой.-->
                 <!-- Будет размечен позже-->
                 Блок c популярными производителями<br>
                 In progress...
             </div>
+            <ul>
+                <!--скачать логотипы-->
+                <li>
+                    <img src="" width="218" height="" alt="Логотип Bosch">
+                </li>
+                <li>
+                    <img src="" width="218" height="" alt="Логотип Makita">
+                </li>
+                <li>
+                    <img src="" width="218" height="" alt="Логотип DeWalt">
+                </li>
+                <li>
+                    <img src="" width="218" height="" alt="Логотип Интерскол">
+                </li>
+                <li>
+                    <img src="" width="218" height="" alt="Логотип Hitachi">
+                </li>
+                <li>
+                    <img src="" width="218" height="" alt="Логотип LG">
+                </li>
+                <li>
+                    <img src="" width="218" height="" alt="Логотип AEG">
+                </li>
+                <li>
+                    <img src="" width="218" height="" alt="Логотип Metabo">
+                </li>
+            </ul>
         </section>
         <section class="services">
             <h2>Сервисы</h2>
@@ -123,12 +228,50 @@
                 <p>
                     Вы можете забрать товар сами, заехав в наш офис:
                 </p>
+                <!--открывает модалку с картой-->
                 <a href="map.html">
-                    <img src="img/small-map@3x.jpg" width="300" height="158" alt="Карта">
+                    <img src="img/small-map@3x.jpg" width="300" height="158" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
                 </a>
-                <a class="button" href="mailto:mail@htmlacademy.ru">Заблудились? НапиШИТЕ НАМ!</a>
+                <!--открывает модалку с текстовым полем-->
+                <a class="button" href="mailto:mail@htmlacademy.ru">Заблудились? Напишите нам!</a>
             </section>
         </div>
+        <section class="modal modal-map">
+            <h2 class="visually-hidden">Как до нас добраться</h2>
+            <p>
+                <img src="img/address.jpg" width="940" height="446" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
+            </p>
+            <button class="modal-close" type="button">
+                <img src="img/form-2.svg" width="21" height="21" alt="Закрывающий крестик">
+                Закрыть
+            </button>
+        </section>
+        <!--придумать класс для модалки с письмом-->
+        <section class="modal modal-letter">
+            <h2 class="visually-hidden">Напишите нам</h2>
+            <form class="letter-form" action="https://echo.htmlacademy.ru" method="post">
+                <p class="letter-item">
+                    <label for="letter-name">Ваше имя:</label>
+                    <input id="letter-name" type="text" name="name" value="" placeholder="Имя Фамилия">
+                </p>
+                <p class="letter-item">
+                    <label for="letter-email">Ваш e-mail:</label>
+                    <input id="letter-email" type="text" name="email" value="" placeholder="email@example.com">
+                </p>
+                <p class="letter-item">
+                    <label for="letter-text">Текст письма:</label>
+                    <textarea placeholder="В свободной форме" rows=10></textarea>
+                </p>
+                <div class="letter-form-footer">
+                    <!-- <input type="submit" text="Отправить"> -->
+                    <button class="button" type="submit">Отправить</button>
+                </div>
+                <button class="modal-close" type="button">
+                    <img src="img/form-2.svg" width="21" height="21" alt="Закрывающий крестик">
+                    Закрыть
+                </button>
+            </form>
+        </section>
     </main>
     <footer class="main-footer">
         <div class="footer__contacts">
@@ -191,11 +334,5 @@
             </span>
         </div>
     </footer>
-    <section class="modal modal-map">
-        <h2 class="visually-hidden">Как до нас добраться</h2>
-            <p>Модалка с картой<br>In progress...
-            </p>
-        <img src="img/form-2.svg" width="21" height="21" alt="Закрывающий крестик">
-    </section>
   </body>
 </html>
